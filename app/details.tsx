@@ -33,12 +33,12 @@ const Details = () => {
         const updatedData = await response.json();
         setCountry(updatedData);
         setIsEditing(false);
-        Alert.alert("Éxito", "El planeta fue actualizado correctamente.");
+        Alert.alert("Éxito", "El cuadro fue actualizado correctamente.");
       } else {
-        Alert.alert("Error", "No se pudo actualizar el planeta. Intenta nuevamente.");
+        Alert.alert("Error", "No se pudo actualizar el cuadro. Intenta nuevamente.");
       }
     } catch (error) {
-      console.error("Error al actualizar el planeta:", error);
+      console.error("Error al actualizar el cuadro:", error);
       Alert.alert("Error", "Hubo un problema al conectar con el servidor.");
     }
   };
@@ -47,7 +47,7 @@ const Details = () => {
     <View style={styles.container}>
       <Stack.Screen
         options={{
-          title: "Detalles del Planeta",
+          title: "Detalles del cuadro",
           headerStyle: { backgroundColor: "#f4511e" },
           headerTintColor: "#fff",
           headerTitleStyle: {
