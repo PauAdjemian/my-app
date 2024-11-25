@@ -23,12 +23,12 @@ export default function Index() {
   
       if (response.ok) {
         setCountrys(countrys.filter((country) => country.id !== id));
-        Alert.alert("Éxito", "El planeta fue eliminado correctamente.");
+        Alert.alert("Éxito", "El cuadro fue eliminado correctamente.");
       } else {
-        Alert.alert("Error", "No se pudo eliminar el planeta. Intenta nuevamente.");
+        Alert.alert("Error", "No se pudo eliminar el cuadro. Intenta nuevamente.");
       }
     } catch (error) {
-      console.error("Error al eliminar el planeta:", error);
+      console.error("Error al eliminar el cuadro:", error);
       Alert.alert("Error", "Hubo un problema al conectar con el servidor.");
     }
   };
@@ -75,9 +75,9 @@ export default function Index() {
           points:"",
           logo: "",
         });
-        Alert.alert("Éxito", "El planeta fue agregado correctamente.");
+        Alert.alert("Éxito", "El cuadro fue agregado correctamente.");
       } else {
-        Alert.alert("Error", "No se pudo agregar el planeta. Intenta nuevamente.");
+        Alert.alert("Error", "No se pudo agregar el cuadro. Intenta nuevamente.");
       }
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
