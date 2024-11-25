@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "my-app",
+			"path": "."
+		},
+		{
+			"name": "entregaPArcial",
+			"path": "../../entregaPArcial"
+		},
+		{
+			"name": ".expo",
+			"path": "../.expo"
+		}
+	],
+	"settings": {}
+}
